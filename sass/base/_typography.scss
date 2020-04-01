@@ -1,0 +1,110 @@
+.heading-primary {
+    color: $color-bg;
+    text-transform: uppercase;
+    // text-shadow: 0 0.25rem 1rem rgba($color-bg, 0.8);
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+
+        animation-name: moveInTop;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+
+        /* animation-iteration-count: 3; */
+        /* animation-delay: 3s; */
+
+        @media screen and (max-width: 650px) {
+            font-size: 3rem;
+            letter-spacing: 0.8rem;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
+    @media screen and (max-width: 650px) {
+        height: 120px;
+        flex-direction: column;
+    }
+}
+
+.heading-secondary {
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-orange);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 4rem;
+
+    &:hover {
+        cursor: default;
+        transform: skew(15deg) scale(1.1) rotate(1deg);
+    }
+}
+
+.stars {
+    display: block;
+    font-size: 2.5rem;
+    color: $color-orange;
+    position: relative;
+    padding: 3.5rem 0;
+
+    & i:nth-child(3) {
+        position: relative;
+        font-size: 3.5rem;
+        top: 9px;
+    }
+
+    & i:nth-child(even) {
+        position: relative;
+        font-size: 3rem;
+        top: 5px;
+    }
+}
+
+.heading-tertiary {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-orange);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.15rem;
+    margin-bottom: 2.5rem;
+    transition: all 0.2s ease-in-out;
+
+    // &:hover {
+    //     cursor: default;
+    //     transform: scale(1.1);
+    // }
+}
+
+.icon-features {
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+
+    & i {
+        color: transparent;
+        background-image: linear-gradient(to left, $color-primary, $color-orange);
+        -webkit-background-clip: text;
+        transition: all 0.2s ease-in-out;
+    }
+}

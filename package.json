@@ -1,0 +1,15 @@
+{
+    "name": "dpp4x4",
+    "version": "1.0.0",
+    "description": "Dangerous Passage Performance 4x4",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass --output-style expanded sass/ --output css/ -w"
+    },
+    "author": "Bristol Hall",
+    "license": "ISC",
+    "devDependencies": {
+        "jsdom-quokka-plugin": "^1.0.15",
+        "node-sass": "^4.13.1"
+    }
+}

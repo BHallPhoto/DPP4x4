@@ -1,0 +1,46 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin btnStyle {
+    background-color: $color-white;
+    color: $color-dark;
+
+    &:active {
+        background-color: $color-orange;
+        color: $color-dark;
+    }
+
+    &::after {
+        background-color: $color-white;
+    }
+}
+
+@mixin sectionFeatures {
+    background-color: $color-bg;
+    cursor: default;
+    max-width: 25rem;
+    display: block;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem $color-blk;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 5rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:hover i {
+        cursor: default;
+        transform: scaleX(-1);
+    }
+    &:hover .heading-tertiary {
+        cursor: default;
+        transform: scale(1.1);
+    }
+}

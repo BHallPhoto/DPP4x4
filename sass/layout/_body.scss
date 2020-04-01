@@ -1,0 +1,81 @@
+.section-about {
+    max-width: calc((100% - #{$gutter-horizontal}) / 2);
+    padding: 8rem 0 0 0;
+    margin: 0 auto;
+
+    @media screen and (max-width: 650px) {
+        max-width: 80%;
+    }
+
+    &__text {
+        display: inline-block;
+        // padding: 0 20rem;
+    }
+}
+
+#section-features {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, rgba($color-lt-orange, 0.6), rgba($color-primary, 0.6)),
+        url("../assets/images/features-bg.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    padding-top: 8rem;
+
+    @media screen and (max-width: 596px) {
+        height: 1450px;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+.section-features {
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: $grid-width;
+    padding: 12rem 0 12rem 0;
+    margin: 0 auto;
+
+    .satisfaction {
+        @include sectionFeatures;
+    }
+
+    .range-of-service {
+        @include sectionFeatures;
+    }
+
+    .expertise {
+        @include sectionFeatures;
+    }
+
+    .quality {
+        @include sectionFeatures;
+    }
+}
+
+.features-paragraph {
+    font-family: "Raleway", sans-serif;
+    color: $color-primary;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.paragraph {
+    font-family: "Raleway", sans-serif;
+    color: $color-primary;
+    font-size: $default-font-size;
+    letter-spacing: 0.1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

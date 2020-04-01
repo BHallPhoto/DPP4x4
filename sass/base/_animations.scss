@@ -1,0 +1,45 @@
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-8rem);
+    }
+    80% {
+        transform: translateY(1.2rem);
+    }
+    90% {
+        // opacity: 1;
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(8rem);
+    }
+    85% {
+        transform: translateX(-0.8rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    85% {
+        transform: translateY(-0.3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
