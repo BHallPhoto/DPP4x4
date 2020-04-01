@@ -118,5 +118,3 @@ form.addEventListener("submit", e => {
         .then(response => console.log("Success!", response))
         .catch(error => console.error("Error!", error.message));
 });
-
-// https://script.google.com/macros/s/AKfycby4hMx44ZAtbDR9HshgCvB5T-w1CnOjJknmDDar_mgGa1cm6ng/exec
