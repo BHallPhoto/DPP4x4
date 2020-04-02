@@ -135,7 +135,7 @@
                     <h2 class="heading-secondary">Contact Us</h2>
                 </div>
                 <form class="contact-form gform" method="POST" action="https://script.google.com/macros/s/AKfycbyiqiGaUvBxLIfbZydOslFl2TLUxtM-kly2hald/exec">
-                    <ul class="flex-outer">
+                    <ul class="flex-outer form-elements">
                         <li>
                             <i class="fas fa-user"></i>
                             <input type="text" name="name" class="label-field" id="name" minlength="2" required />
@@ -161,11 +161,15 @@
                             <!-- <button type="submit">Submit</button> -->
                         </li>
                     </ul>
+                    <div style="display:none" class="thankyou_message">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                    </div>
                 </form>
             </section>
         </main>
 
         <script src="js/main.js"></script>
-        <!-- <script src="js/google-form.js"></script> -->
+        <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
     </body>
 </html>

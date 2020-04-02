@@ -108,20 +108,3 @@ message.addEventListener("input", event => {
         messageLabel.classList.add("error");
     }
 });
-
-// const scriptURL = "https://script.google.com/macros/s/AKfycby4hMx44ZAtbDR9HshgCvB5T-w1CnOjJknmDDar_mgGa1cm6ng/exec";
-// const form = document.forms["submit-to-google-sheet"];
-
-// form.addEventListener("submit", e => {
-//     e.preventDefault();
-//     let h = new Headers();
-//     h.append("Access-Control-Allow-Origin", "http://127.0.0.1:5500/");
-//     fetch(scriptURL, {
-//         method: "POST",
-//         headers: h,
-//         mode: "cors",
-//         body: new FormData(form)
-//     })
-//         .then(response => console.log("Success!", response))
-//         .catch(error => console.error("Error!", error.message));
-// });
