@@ -9,12 +9,13 @@
 body {
     height: 100%;
     width: 100%;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 html {
     background-color: $color-bg;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    // overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
 }

@@ -5,8 +5,7 @@
     text-align: center;
     position: relative;
     height: 85vh;
-    background-image: linear-gradient(to left bottom, rgba($color-lt-orange, 0.6), rgba($color-primary, 0.6)),
-        url("../assets/images/header-bg.jpeg");
+    background-image: linear-gradient(to left bottom, rgba($color-lt-orange, 0.6), rgba($color-primary, 0.6)), url("../assets/images/header-bg.jpeg");
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);

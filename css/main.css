@@ -9,12 +9,15 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 html {
   background-color: #3b3736;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
 }
 
 @keyframes moveInTop {
@@ -472,6 +475,12 @@ html {
   border-radius: 1.5rem;
 }
 
+@media screen and (max-width: 596px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+
 .flex-outer {
   list-style: none;
   font-family: "Monserrat", sans-serif;
@@ -584,6 +593,12 @@ html {
   cursor: pointer;
 }
 
+@media screen and (max-width: 596px) {
+  .flex-outer label.error {
+    font-size: 0.6em;
+  }
+}
+
 .flex-outer .btn-submit.disable {
   cursor: not-allowed;
 }
@@ -646,4 +661,18 @@ html {
 
 .btn-submit::after {
   background-color: #eee;
+}
+
+.thankyou_message {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou_message h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: rgba(59, 55, 54, 0.9);
 }

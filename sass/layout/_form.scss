@@ -14,10 +14,13 @@
     width: 50rem;
     height: 100%;
     padding-bottom: 4rem;
-    background-image: linear-gradient(to left bottom, rgba($color-lt-orange, 0.6), rgba($color-primary, 0.6)),
-        url("../assets/images/header-bg.jpeg");
+    background-image: linear-gradient(to left bottom, rgba($color-lt-orange, 0.6), rgba($color-primary, 0.6)), url("../assets/images/header-bg.jpeg");
     background-size: cover;
     border-radius: 1.5rem;
+
+    @media screen and (max-width: 596px) {
+        width: 100%;
+    }
 }
 
 .flex-outer {
@@ -123,61 +126,20 @@
         color: orangered;
         font-size: 0.8em;
         cursor: pointer;
+
+        @media screen and (max-width: 596px) {
+            font-size: 0.6em;
+        }
     }
 
     .btn-submit.disable {
         cursor: not-allowed;
     }
 
-    // input:focus + label,
-    // textarea:focus + label,
-    // input:valid + label,
-    // textarea:valid + label {
-    //     top: 8px;
-    //     left: 4px;
-    //     color: rgba($color-blue, 0.5);
-    //     font-size: 0.8em;
-    //     cursor: pointer;
-    // }
-
-    // input:required:focus:invalid + label {
-    //     top: 8px;
-    //     left: 4px;
-    //     color: orangered;
-    //     font-size: 0.8em;
-    //     cursor: pointer;
-    // }
-
-    // input[type="email"]:required:focus:invalid + label {
-    //     top: 8px;
-    //     left: 4px;
-    //     color: orangered;
-    //     font-size: 0.8em;
-    //     cursor: pointer;
-    // }
-
     textarea {
         resize: vertical;
     }
 }
-
-// label.ok {
-//     position: absolute;
-//     top: 8px;
-//     left: 4px;
-//     color: rgba($color-blue, 0.5);
-//     font-size: 0.8em;
-//     cursor: pointer;
-// }
-
-// label.error {
-//     position: absolute;
-//     top: 8px;
-//     left: 4px;
-//     color: orangered;
-//     font-size: 0.8em;
-//     cursor: pointer;
-// }
 
 .btn-submit {
     &:link,
@@ -225,4 +187,21 @@
     }
 
     @include btnStyle;
+}
+
+.thankyou_message {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-family: "Raleway", sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        color: rgba($color-bg, 0.9);
+        // background-image: linear-gradient(to bottom right, $color-primary, $color-orange);
+        // -webkit-background-clip: text;
+        // color: transparent;
+    }
 }
